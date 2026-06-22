@@ -1,0 +1,265 @@
+/* CSS structure
+1. Reset and global styles
+2. Layout utilities
+3. Header
+4. Hero
+5. Skills
+6. Project cards
+7. Experience
+8. Contact
+9. Footer
+10. Responsive rules */
+
+
+/* ========================================
+   Global styles
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 8px;
+
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+/* ========================================
+   Header
+======================================== */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 24px 32px;
+
+    background-color: dimgray;
+    color: azure;
+}
+
+
+/* Brand: name and professional title */
+
+.site-brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-brand h1 {
+    margin: 0;
+
+    font-size: 1.6rem;
+}
+
+.site-brand p {
+    margin: 6px 0 0;
+
+    font-size: 0.95rem;
+}
+
+
+/* Main navigation */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.main-nav a {
+    color: azure;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Contact link */
+
+.contact-link {
+    padding: 10px 18px;
+
+    color: azure;
+    background-color: #444;
+
+    border: 1px solid azure;
+    border-radius: 8px;
+
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.contact-link:hover {
+    background-color: #555;
+}
+
+
+/* ========================================
+   Main content
+======================================== */
+
+main {
+    padding: 20px 32px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+/* ========================================
+   About section
+======================================== */
+
+#about {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px;
+
+    line-height: 1.6;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+/* About introduction */
+
+.about-intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+
+    line-height: 1.7;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-intro-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-image {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+
+    border-radius: 16px;
+}
+
+.highlight-tag {
+    padding: 8px 14px;
+
+    background-color: #e8edf2;
+    border: 1px solid #d5dbe1;
+    border-radius: 20px;
+
+    font-size: 0.9rem;
+}
+
+
+/* Highlights */
+
+.about-highlights h3 {
+    margin-top: 0;
+}
+
+.highlights-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.highlight-tag {
+    padding: 8px 14px;
+
+    background-color: #e8edf2;
+    border-radius: 20px;
+    border: 1px solid #d5dbe1;
+
+    font-size: 0.9rem;
+}
+
+.highlight-tag:hover {
+    background-color: #d8e2ea;
+}
+
+
+/* Current focus */
+
+.about-focus {
+    padding: 20px;
+
+    background-color: #f4f6f8;
+    border-left: 4px solid #555;
+    border-radius: 8px;
+}
+
+.about-focus h3 {
+    margin-top: 0;
+}
+
+.about-focus p {
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   Footer
+======================================== */
+
+footer {
+    padding: 24px 32px;
+
+    font-family: system-ui, Arial, Helvetica, sans-serif;
+
+    background-color: dimgray;
+    color: azure;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+
+/* ========================================
+   Responsive layout
+======================================== */
+
+@media (max-width: 800px) {
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-nav {
+        flex-wrap: wrap;
+    }
+
+    main {
+        padding: 20px 16px;
+    }
+
+    #about {
+        padding: 24px;
+    }
+}
+
