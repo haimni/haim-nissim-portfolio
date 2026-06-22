@@ -1,138 +1,193 @@
-<!-- ```html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Page metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
+    <!-- Page title -->
+    <title>Haim Nissim | Portfolio</title>
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="CSS_files/style.css" />
+  </head>
 
-    <title>Portfolio Project</title>
+  <body>
+    <!-- ========================================
+         Header: Brand, Navigation, Contact CTA
+    ========================================= -->
+    <header class="site-header">
+      <div class="site-brand">
+        <h1>Haim Nissim</h1>
+        <p>Designing Reliable Hardware & Software Systems</p>
+      </div>
 
-    <link rel="stylesheet" href="CSS_files/style.css">
-</head>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+      </nav>
 
-<body>
+      <a class="contact-link" href="#contact">Contact Me</a>
+    </header>
 
-    <!-- Header: site name, professional title, navigation and contact link -->
-    <div class="site-brand">
-        <header class="site-header">
-        <div class="site-brand">
-            <h1>Haim Nissim</h1>
-            <p>Electrical Engineer | FPGA | Embedded Systems | Full-Stack</p>
-        </div>  
-            <nav class="main-nav">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#certifications">Certifications</a>
-                <!-- Education
-                Certifications / Courses -->
-            </nav>
-
-            <a class="contact-link" href="#contact">
-                Contact Me
-            </a>
-
-        </header>
-    </div>
-
-    <!-- Main page content -->
+    <!-- ========================================
+         Main Page Content
+    ========================================= -->
     <main>
+      <!-- ========================================
+           Hero Section: Main introduction and CTAs
+      ========================================= -->
+      <section class="hero" id="home">
+        <div class="hero-overlay">
+          <!-- Left side: text content -->
+          <div class="hero-content">
+            <p class="hero-eyebrow">Hello, I'm Haim Nissim</p>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-intro">
-                    <div class="about-intro-text">
-                        <p>
-                            I am an Electrical and Electronics Engineer with experience
-                            in complex hardware-software systems, 
-                            system integration, validation and technical debugging.
-                        </p>
-                        <p>
-                            My professional background includes working with multidisciplinary systems, 
-                            automated testing and failure investigation across hardware and software boundaries. 
-                            I focus on understanding system behavior, 
-                            identifying root causes and developing reliable solutions.
-                        </p>
-                        <p>
-                            I approach engineering challenges with structured analysis, 
-                            practical implementation and continuous learning.
-                        </p>
-                    </div>
+            <h2 class="hero-title">Turning Ideas Into Reliable Systems.</h2>
 
-                    <div>
-                        <a class="about-image-link" href="#projects">
-                            <img 
-                                class="about-image"
-                                src="images/Profile_picture.png" 
-                                alt="Stylized illustration of Haim working with FPGA and embedded hardware">
-                        </a>
-                    </div>
-                </div>
-                <div class="about-highlights">
-                    <h3>Highlights</h3>
-                    <div class="highlights-list">
-                        <span class="highlight-tag">FPGA & RTL Design</span>
-                        <span class="highlight-tag">Embedded Systems</span>
-                        <span class="highlight-tag">Hardware-Software Integration</span>
-                        <span class="highlight-tag">System Validation</span>
-                        <span class="highlight-tag">Debugging & Root Cause Analysis</span>
-                        <span class="highlight-tag">Python</span>
-                        <span class="highlight-tag">PCB Design</span>
-                        <span class="highlight-tag">Full-Stack Development</span>
-                    </div> 
-                </div>
+            <div class="hero-divider"></div>
 
-                <div class="about-focus">    
-                    <h3>Current Focus</h3>
-                    <p>
-                       I am currently expanding my expertise in FPGA, 
-                       embedded systems and web technologies while building practical projects that connect hardware, 
-                       software and system-level engineering.
-                    </p>    
-                </div>
+            <p class="hero-description">
+              I'm an Electrical Engineer specializing in FPGA design, embedded
+              systems, hardware-software integration, and full-stack development.
+            </p>
+
+            <p class="hero-description">
+              I build, test, and optimize complex systems from the silicon up to
+              the user interface.
+            </p>
+
+            <div class="hero-actions">
+              <a class="hero-button hero-button-primary" href="#projects">
+                View My Projects
+              </a>
+
+              <a class="hero-button hero-button-secondary" href="#contact">
+                Contact Me
+              </a>
             </div>
-        </section>
+          </div>
 
-        <section id="projects">
-            <h2>Projects</h2>
-        </section>
+          <!-- Right side: profile illustration -->
+          <div class="hero-visual">
+            <img
+              class="hero-image"
+              src="images/Profile_picture.png"
+              alt="Stylized illustration of Haim working with FPGA and embedded hardware"
+            />
+          </div>
+        </div>
+      </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-        </section>
+      <!-- ========================================
+           About Section
+      ========================================= -->
+      <section id="about">
+        <h2>About Me</h2>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-        </section>
+        <div class="about-content">
+          <!-- Professional introduction -->
+          <div class="about-intro">
+            <div class="about-intro-text">
+              <p>
+                I am an Electrical and Electronics Engineer with experience in
+                complex hardware-software systems, system integration,
+                validation, and technical debugging.
+              </p>
 
-        <section id="education">
-            <h2>Education</h2>
-        </section>
+              <p>
+                My professional background includes working with
+                multidisciplinary systems, automated testing, and failure
+                investigation across hardware and software boundaries. I focus
+                on understanding system behavior, identifying root causes, and
+                developing reliable solutions.
+              </p>
 
-        <section id="certifications">
-            <h2>Certifications</h2>
-        </section>
+              <p>
+                I approach engineering challenges through structured analysis,
+                practical implementation, and continuous learning.
+              </p>
+            </div>
+          </div>
 
+          <!-- Professional highlights -->
+          <div class="about-highlights">
+            <h3>Highlights</h3>
+
+            <div class="highlights-list">
+              <span class="highlight-tag">FPGA & RTL Design</span>
+              <span class="highlight-tag">Embedded Systems</span>
+              <span class="highlight-tag">Hardware-Software Integration</span>
+              <span class="highlight-tag">System Validation</span>
+              <span class="highlight-tag">Debugging & Root Cause Analysis</span>
+              <span class="highlight-tag">Python</span>
+              <span class="highlight-tag">PCB Design</span>
+              <span class="highlight-tag">Full-Stack Development</span>
+            </div>
+          </div>
+
+          <!-- Current learning and project focus -->
+          <div class="about-focus">
+            <h3>Current Focus</h3>
+
+            <p>
+              I am currently expanding my expertise in FPGA, embedded systems,
+              and web technologies while building practical projects that
+              connect hardware, software, and system-level engineering.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================
+           Projects Section
+      ========================================= -->
+      <section id="projects">
+        <h2>Projects</h2>
+      </section>
+
+      <!-- ========================================
+           Experience Section
+      ========================================= -->
+      <section id="experience">
+        <h2>Experience</h2>
+      </section>
+
+      <!-- ========================================
+           Education Section
+      ========================================= -->
+      <section id="education">
+        <h2>Education</h2>
+      </section>
+
+      <!-- ========================================
+           Certifications Section
+      ========================================= -->
+      <section id="certifications">
+        <h2>Certifications</h2>
+      </section>
+
+      <!-- ========================================
+           Contact Section
+      ========================================= -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+      </section>
     </main>
 
-    <!-- Footer: copyright and external links -->
+    <!-- ========================================
+         Footer
+    ========================================= -->
     <footer>
-        <p>&copy; 2026 Haim Nissim</p>
-        <p>GitHub | LinkedIn | Email</p>
+      <p>&copy; 2026 Haim Nissim</p>
+      <p>GitHub | LinkedIn | Email</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
-
-
 
 <!-- HTML structure
 1. Document head
