@@ -536,6 +536,110 @@ section {
     background-color: #1e293b;
 }
 
+/* ========================================
+   Education Section
+======================================== */
+
+#education {
+    max-width: 1000px;
+    margin: 48px auto;
+    padding: 40px;
+
+    text-align: center;
+    line-height: 1.6;
+
+    color: #e5edf5;
+    background-color: #111827;
+
+    border: 1px solid #243244;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+#education h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    color: #f8fafc;
+}
+
+#education h2::after {
+    content: "";
+    display: block;
+
+    width: 70px;
+    height: 3px;
+
+    margin: 12px auto 0;
+
+    background-color: #38bdf8;
+    border-radius: 999px;
+}
+
+.education-grid {
+    margin-top: 32px;
+}
+
+.education-card {
+    padding: 28px;
+
+    background-color: #172033;
+    border: 1px solid #243244;
+    border-radius: 14px;
+
+    text-align: center;
+}
+
+
+.education-logo {
+    border-radius: 50%;
+    border: 4px solid #4da3ff;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-header h3 {
+    margin: 0 0 8px;
+
+    color: #38bdf8;
+}
+
+.education-years {
+    display: block;
+    margin-bottom: 20px;
+
+    color: #cbd5e1;
+}
+
+.education-card p {
+    max-width: 750px;
+    margin: 0 auto 24px;
+
+    color: #cbd5e1;
+}
+
+.education-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.education-tags li {
+    padding: 10px 16px;
+
+    color: #dbeafe;
+    background-color: #0f172a;
+
+    border: 1px solid #38bdf8;
+    border-radius: 999px;
+}
 
 /* Responsive Projects */
 
@@ -552,6 +656,271 @@ section {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+
+/* ========================================
+   Professional Training Section
+======================================== */
+
+#training {
+    max-width: 1200px;
+    margin: 48px auto;
+    padding: 40px;
+
+    text-align: center;
+    line-height: 1.6;
+
+    color: #e5edf5;
+    background-color: #111827;
+
+    border: 1px solid #243244;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+#training h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    color: #f8fafc;
+}
+
+#training h2::after {
+    content: "";
+    display: block;
+
+    width: 70px;
+    height: 3px;
+
+    margin: 12px auto 0;
+
+    background-color: #38bdf8;
+    border-radius: 999px;
+}
+
+#training .section-intro {
+    max-width: 760px;
+    margin: 24px auto 40px;
+
+    color: #cbd5e1;
+}
+
+.training-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+
+    text-align: left;
+}
+
+.training-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px;
+
+    background-color: #172033;
+    border: 1px solid #243244;
+    border-radius: 14px;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.training-image {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.training-card h3 {
+    margin: 0 0 8px;
+
+    color: #38bdf8;
+}
+
+.training-provider {
+    margin: 0 0 18px;
+
+    color: #f8fafc;
+}
+
+.training-card p {
+    color: #cbd5e1;
+}
+
+.training-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin: auto 0 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.training-tags li {
+    padding: 8px 14px;
+
+    color: #dbeafe;
+    background-color: #0f172a;
+
+    border: 1px solid #38bdf8;
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+    #training {
+        padding: 24px;
+    }
+
+    .training-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .training-image {
+        height: 180px;
+    }
+}
+
+/* ========================================
+   Experience Section
+======================================== */
+
+#experience {
+    max-width: 1000px;
+    margin: 48px auto;
+    padding: 40px;
+
+    text-align: center;
+    line-height: 1.6;
+
+    color: #e5edf5;
+    background-color: #111827;
+
+    border: 1px solid #243244;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+#experience h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    color: #f8fafc;
+}
+
+#experience h2::after {
+    content: "";
+    display: block;
+
+    width: 70px;
+    height: 3px;
+
+    margin: 12px auto 0;
+
+    background-color: #38bdf8;
+    border-radius: 999px;
+}
+
+#experience .section-intro {
+    max-width: 760px;
+    margin: 24px auto 40px;
+
+    color: #cbd5e1;
+}
+
+.experience-card {
+    padding: 28px;
+
+    text-align: center;
+
+    background-color: #172033;
+    border: 1px solid #243244;
+    border-radius: 14px;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.experience-logo-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 120px;
+    height: 120px;
+
+    margin-bottom: 24px;
+
+    background-color: white;
+    border-radius: 50%;
+}
+
+.experience-logo {
+    max-width: 90px;
+    height: auto;
+}
+
+.experience-header h3 {
+    margin: 0 0 8px;
+
+    color: #38bdf8;
+}
+
+.experience-company {
+    display: block;
+    margin-bottom: 12px;
+
+    color: #f8fafc;
+    font-weight: 600;
+}
+
+.experience-period {
+    margin: 0 auto 20px;
+
+    color: #cbd5e1;
+}
+
+.experience-card p {
+    max-width: 750px;
+    margin: 0 auto 24px;
+
+    color: #cbd5e1;
+}
+
+.experience-points {
+    max-width: 760px;
+    margin: 0 auto;
+    padding-left: 20px;
+
+    text-align: left;
+    color: #cbd5e1;
+}
+
+.experience-points li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    #experience {
+        padding: 24px;
+    }
+
+    .experience-logo-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+
+    .experience-logo {
+        max-width: 75px;
     }
 }
 
