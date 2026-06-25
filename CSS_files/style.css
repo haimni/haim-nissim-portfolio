@@ -241,76 +241,319 @@ section {
 ======================================== */
 
 #about {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 32px;
+    max-width: 1000px;
+    margin: 48px auto;
+    padding: 40px;
 
-  line-height: 1.6;
+    text-align: center;
 
-  background-color: white;
-  border-radius: 10px;
+    background-color: #111827;
+    border: 1px solid #243244;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    color: #e5edf5;
 }
 
-.about-content {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+#about h2 {
+    margin-bottom: 12px;
+    color: #f8fafc;
 }
 
-.about-intro {
-  display: flex;
-  align-items: flex-start;
-  gap: 32px;
+#about h2::after {
+    content: "";
+    display: block;
 
-  line-height: 1.7;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 70px;
+    height: 3px;
+
+    margin: 12px auto 0;
+
+    background-color: #38bdf8;
+    border-radius: 999px;
 }
 
 .about-intro-text {
-  flex: 1;
-  max-width: 600px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #cbd5e1;
 }
 
-.about-highlights h3 {
-  margin-top: 0;
+.about-intro-text h3 {
+    color: #38bdf8;
 }
 
-.highlights-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.about-facts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin: 28px 0 0;
+    padding: 0;
+
+    list-style: none;
 }
 
-.highlight-tag {
-  padding: 8px 14px;
+.about-facts li {
+    padding: 10px 16px;
 
-  background-color: #e8edf2;
-  border: 1px solid #d5dbe1;
-  border-radius: 20px;
+    background-color: #172033;
+    border: 1px solid #38bdf8;
+    border-radius: 999px;
 
-  font-size: 0.9rem;
+    color: #dbeafe;
 }
 
-.highlight-tag:hover {
-  background-color: #d8e2ea;
+
+/* ========================================
+   Technical Stack Section
+======================================== */
+
+#technologies {
+    max-width: 1000px;
+    margin: 48px auto;
+    padding: 40px;
+
+    text-align: center;
+    line-height: 1.6;
+
+    color: #e5edf5;
+    background-color: #111827;
+
+    border: 1px solid #243244;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
-.about-focus {
-  padding: 20px;
+#technologies h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
 
-  background-color: #f4f6f8;
-  border-left: 4px solid #555;
-  border-radius: 8px;
+    color: #f8fafc;
 }
 
-.about-focus h3 {
-  margin-top: 0;
+#technologies h2::after {
+    content: "";
+    display: block;
+
+    width: 70px;
+    height: 3px;
+
+    margin: 12px auto 0;
+
+    background-color: #38bdf8;
+    border-radius: 999px;
 }
 
-.about-focus p {
-  margin-bottom: 0;
+.section-quote {
+    margin: 24px auto 16px;
+
+    max-width: 700px;
+
+    color: #38bdf8;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
+.section-intro,
+#technologies p {
+    max-width: 850px;
+    margin: 0 auto 18px;
+
+    color: #cbd5e1;
+}
+
+.technologies-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin: 32px 0 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.technologies-list li {
+    padding: 10px 16px;
+
+    color: #dbeafe;
+    background-color: #172033;
+
+    border: 1px solid #38bdf8;
+    border-radius: 999px;
+}
+
+.technologies-list li:hover {
+    background-color: #1e293b;
+}
+
+/* ========================================
+   Projects Section
+======================================== */
+
+#projects {
+    max-width: 1000px;
+    margin: 48px auto;
+    padding: 40px;
+
+    text-align: center;
+    line-height: 1.6;
+
+    color: #e5edf5;
+    background-color: #111827;
+
+    border: 1px solid #243244;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+#projects h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    color: #f8fafc;
+}
+
+#projects h2::after {
+    content: "";
+    display: block;
+
+    width: 70px;
+    height: 3px;
+
+    margin: 12px auto 0;
+
+    background-color: #38bdf8;
+    border-radius: 999px;
+}
+
+#projects .section-intro {
+    max-width: 750px;
+    margin: 24px auto 32px;
+
+    color: #cbd5e1;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    text-align: left;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background-color: #172033;
+    border: 1px solid #243244;
+    border-radius: 14px;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.project-image {
+    display: block;
+
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
+
+    background-color: #0f172a;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 20px;
+}
+
+.project-content h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+
+    color: #38bdf8;
+}
+
+.project-content p {
+    margin-top: 0;
+    margin-bottom: 18px;
+
+    color: #cbd5e1;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin: 0 0 20px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.project-tags li {
+    padding: 6px 10px;
+
+    color: #dbeafe;
+    background-color: #0f172a;
+
+    border: 1px solid #38bdf8;
+    border-radius: 999px;
+
+    font-size: 0.85rem;
+}
+
+.project-links {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: auto;
+}
+
+.project-links a {
+    padding: 8px 12px;
+
+    color: #e5edf5;
+    text-decoration: none;
+
+    border: 1px solid #38bdf8;
+    border-radius: 8px;
+}
+
+.project-links a:hover {
+    background-color: #1e293b;
+}
+
+
+/* Responsive Projects */
+
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    #projects {
+        padding: 24px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* ========================================
    Footer
